@@ -139,7 +139,6 @@ function sortearAmigo() {
         botaoSortear.textContent = 'Sortear amigo';
         botaoSortear.onclick = sortearAmigo;
         atualizarContador();
-        habilitarCliqueHistorico(); // Habilita o clique nos itens do histórico
     };
 
     atualizarContador();

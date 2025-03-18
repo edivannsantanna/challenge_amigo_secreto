@@ -276,3 +276,28 @@ ul {
     font-size: 18px;
     z-index: 1000;
 }
+
+/* Media query para telas menores */
+@media (max-width: 768px) {
+    .input-section {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+    .history-section{
+        width: 60%;
+    }
+}
+
+/* Media query para telas médias */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .input-section {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+    .history-section{
+        width: 60%;
+    }
+}
