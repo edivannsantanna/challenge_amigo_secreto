@@ -2,6 +2,9 @@
 
 <img src="assets/Captura_de_tela.png" alt="captura de tela do desafio" width="400" height="282">
 
+## Acesse a aplicação
+ [Amigo Secreto](https://edivannsantanna.github.io/challenge_amigo_secreto/).
+
 ## 📖 Sobre
 
 O projeto "Amigo Secreto" é uma aplicação web que permite aos usuários adicionar nomes de participantes, realizar o sorteio de amigo secreto e visualizar um histórico dos nomes adicionados.
