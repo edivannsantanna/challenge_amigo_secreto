@@ -159,7 +159,7 @@ function habilitarCliqueHistorico() {
     const itensHistorico = document.querySelectorAll('#historicoNomes li');
     itensHistorico.forEach(item => {
         item.classList.remove('disabled');
-        item.onclick = () => adicionarNomeAoSorteio(item.textContent);
+        item.onclick = () => adicionarNomeAoSorteio(item.firstChild.textContent.trim());
     });
 }
 
