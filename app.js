@@ -80,6 +80,19 @@ function adicionarNomeAoSorteio(nome) {
     }
 }
 
+// Habilita o clique nos itens do histórico
+function habilitarCliqueHistorico() {
+    const itensHistorico = document.querySelectorAll('#historicoNomes li');
+    itensHistorico.forEach(item => {
+        item.classList.remove('disabled');
+        item.onclick = () => {
+            if (item.firstChild) {
+                adicionarNomeAoSorteio(item.firstChild.textContent.trim());
+            }
+        };
+    });
+}
+
 // Atualiza o histórico de nomes exibido
 function atualizarHistoricoNomes() {
     listaHistorico.innerHTML = '';
@@ -159,7 +172,11 @@ function habilitarCliqueHistorico() {
     const itensHistorico = document.querySelectorAll('#historicoNomes li');
     itensHistorico.forEach(item => {
         item.classList.remove('disabled');
-        item.onclick = () => adicionarNomeAoSorteio(item.textContent);
+        item.onclick = () => {
+            if (item.firstChild) {
+                adicionarNomeAoSorteio(item.firstChild.textContent.trim());
+            }
+        };
     });
 }
 
