@@ -1,23 +1,10 @@
 # 🎉 Amigo Secreto
 
-<img src="assets/Captura_de_tela.png" alt="captura de tela do desafio" width="200" height="141">
-
-## 📋 Índice
-
-- [Sobre](#sobre)
-- [Características](#características)
-- [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Estrutura do Projeto](#estrutura-do-projeto)
-- [Instalação](#instalação)
-- [Dependências](#dependências)
-- [Como Executar](#como-executar)
-- [Possíveis Problemas e Soluções](#possíveis-problemas-e-soluções)
-- [Contribuição](#contribuição)
-- [Acesso ao Projeto](#acesso-ao-projeto)
+<img src="assets/Captura_de_tela.png" alt="captura de tela do desafio" width="400" height="282">
 
 ## 📖 Sobre
 
-O projeto "Amigo Secreto" é uma aplicação web que permite aos usuários adicionar nomes de participantes, realizar o sorteio de amigo secreto e visualizar um histórico dos nomes adicionados. É uma ferramenta útil para organizar eventos de amigo secreto de forma rápida e eficiente.
+O projeto "Amigo Secreto" é uma aplicação web que permite aos usuários adicionar nomes de participantes, realizar o sorteio de amigo secreto e visualizar um histórico dos nomes adicionados.
 
 
 ## ✨ Características
@@ -46,12 +33,12 @@ O projeto é composto pelos seguintes arquivos:
 
 1. Clone o repositório para o seu computador:
     ```bash
-    git clone <URL_DO_REPOSITORIO>
+    git clone https://github.com/edivannsantanna/challenge_amigo_secreto.git
     ```
 
 2. Navegue até o diretório do projeto:
     ```bash
-    cd challenge-amigo-secreto_pt-main
+    cd challenge_amigo_secreto
     ```
 
 ## 📦 Dependências
@@ -75,9 +62,3 @@ Não há dependências externas para este projeto. Todos os arquivos necessário
 
 - **Problema**: O nome do participante não está sendo adicionado.
   - **Solução**: Certifique-se de que o campo de entrada não está vazio e que o nome não foi adicionado anteriormente.
-
-## 🌐 Acesso ao Projeto
-
-O projeto "Amigo Secreto" está disponível online no GitHub Pages. Você pode acessá-lo através do seguinte link:
-
-[Amigo Secreto - GitHub Pages](https://<USERNAME>.github.io/<REPOSITORY>/)
