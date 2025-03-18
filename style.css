@@ -1,0 +1,278 @@
+:root {
+    --color-primary: #4B69FD;
+    --color-secondary: #FFF9EB;
+    --color-tertiary: #C4C4C4;
+    --color-button: #fe652b;
+    --color-button-hover: #e55720;
+    --color-text: #444444;
+    --color-white: #FFFFFF;
+}
+
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+/* Banner */
+.header-banner {
+    flex: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 0;
+}
+
+/* Seção de entrada */
+.input-section {
+    flex: 60%;
+    background-color: var(--color-secondary);
+    border: 1px solid #000;
+    border-radius: 64px 64px 0 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px;
+    width: 100%;
+}
+
+.input-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Títulos */
+.main-title {
+    font-size: 48px;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: italic;
+    color: var(--color-white);
+}
+
+.section-title {
+    font-family: "Inter", serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Contêineres de entrada e botão */
+.input-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.input-name {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 25px 0 0 25px;
+    font-size: 16px;
+}
+
+.button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espaçamento entre os botões */
+}
+
+/* Estilos de entrada de texto */
+.input-title {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #333;
+    border-right: none;
+    border-radius: 25px 0 0 25px;
+    font-family: "Merriweather", serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos de botão */
+button {
+    padding: 15px 30px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    border: 2px solid #000;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.button-add {
+    background-color: var(--color-tertiary);
+    color: var(--color-text);
+    border-radius: 0 25px 25px 0;
+}
+
+.button-add:hover {
+    background-color: #a1a1a1;
+}
+
+.button-reset {
+    background-color: var(--color-tertiary);
+    color: var(--color-text);
+    margin-left: 10px;
+    cursor: not-allowed;
+}
+
+.button-reset:enabled {
+    cursor: pointer;
+    background-color: var(--color-button);
+    color: var(--color-white);
+}
+
+.button-reset:enabled:hover {
+    background-color: var(--color-button-hover);
+}
+
+/* Listas */
+ul {
+    list-style-type: none;
+    color: var(--color-text);
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.result-list {
+    margin-top: 15px;
+    color: #05DF05;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Botão de sortear título */
+.button-draw {
+    display: flex;
+    align-items: center;
+    padding: 10px 40px;
+    color: var(--color-white);
+    background-color: var(--color-button);
+    font-size: 16px;
+    width: auto; /* Mantém o tamanho anterior */
+}
+
+.button-draw img {
+    margin-right: 40px;
+}
+
+.button-draw:hover {
+    background-color: var(--color-button-hover);
+}
+
+/* Estilo para o contador de amigos restantes */
+.counter-container {
+    margin-top: 20px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    color: var(--color-primary);
+}
+
+/* Estilo para o histórico de nomes */
+.history-section {
+    width: 200px;
+    margin-left: 20px;
+    background-color: var(--color-secondary);
+    border: 1px solid var(--color-tertiary);
+    border-radius: 10px;
+    padding: 10px;
+    height: 300px; /* Altura fixa */
+    overflow-y: hidden; /* Esconde o scroll na seção */
+    display: flex;
+    flex-direction: column;
+}
+
+.history-section .section-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    flex-shrink: 0; /* Fixa o título */
+}
+
+.history-section .name-list {
+    flex-grow: 1; /* Permite que a lista cresça */
+    overflow-y: auto; /* Scroll apenas na lista */
+}
+
+.history-section .name-list li {
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.history-section .name-list li:hover {
+    background-color: var(--color-tertiary);
+}
+
+.history-section .name-list li button,
+.name-list li button {
+    background-color: transparent;
+    color: red;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 10px;
+    border: none; /* Remove a borda */
+}
+
+.history-section .name-list li button:hover,
+.name-list li button:hover {
+    background-color: red;
+    color: white;
+}
+
+/* Lista de exibição de sorteio de amigo */
+.name-list {
+    max-height: 200px; /* Altura fixa */
+    overflow-y: auto; /* Scroll */
+    width: auto; /* Retorna a largura anterior */
+    scrollbar-width: auto; /* Retorna o scroll no Firefox */
+}
+
+.name-list::-webkit-scrollbar {
+    display: block; /* Retorna o scroll no Chrome, Safari e Opera */
+}
+
+.mensagem-adicionado {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--color-button);
+    color: var(--color-white);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    z-index: 1000;
+}
